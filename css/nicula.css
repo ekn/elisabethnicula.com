@@ -18,7 +18,8 @@ h1 {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
     font-size: 3em;
-    font-weight: 100;
+    font-weight: 300;
+    line-height: 1.1em;
     color: #8560cc;
     letter-spacing: 2px;
     text-transform: lowercase;
