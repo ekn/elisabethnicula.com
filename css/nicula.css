@@ -31,7 +31,8 @@ h2 {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
-    font-weight: 300;    
+    font-weight: 300;
+    text-transform: uppercase;    
 }
 
 h3 {
@@ -100,6 +101,11 @@ header, footer {
 
 li.full {
 	width: 97.916667%;      /* 940px/960px = .97916667 */
+	margin: 0 01.0416667% 20px;      /* 10px/960px = .010416667 */
+}
+
+li.trip {
+	width: 31.25%;      /* 300px/960px = .3125 */
 	margin: 0 01.0416667% 20px;      /* 10px/960px = .010416667 */
 }
 
