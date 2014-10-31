@@ -177,6 +177,12 @@ font-size: .8em;
 		height: auto;
 		margin: 0 5% 20px;
 	}
+	
+	h1 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
 }
 		
 
