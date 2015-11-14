@@ -14,10 +14,12 @@
 
 <script>
 	$(document).ready(function() {
-    	$("[href]").each(function() {
-		if (this.href == window.location.href) {
-        	$(this).addClass("active");
-			}
-		});
-	});
+        var stripIndex = function(s) { return s.endsWith("/index.html") ? s.slice(0, -10) : s; }
+
+        $("[href]").each(function() {
+            if (stripIndex(this.href) == stripIndex(window.location.href)) {
+                $(this).addClass("active");
+            }
+        });
+    });
 </script>
