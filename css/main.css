@@ -262,6 +262,10 @@ font-size: .8em;
 	margin: 15px 0;
 }
 
+.credit {
+	font-size: .8em;
+}
+
 nav .active {
 	color: #FFF!important;
 	border-bottom: none!important;
