@@ -147,7 +147,7 @@ h2 {
 }
 
 h3 {
-	margin: 1em 0 .5em 0;
+	margin: 0 0 .5em 0;
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.1em;
@@ -273,17 +273,29 @@ nav .active {
 	background-color: #9933ff; 
 }
 
+
+p.date {
+	margin: 3em 0 0 0;
+}
+
 /* MAILCHIMP FORM ------------------------------------------ */
 
 #mc_embed_signup {background:#fff; clear:left; font:14px 'Roboto', sans-serif; font-weight: 500; }
 #mc_embed_signup form {
 	padding: 20px 0 10px 0!important;
+	text-align: left!important;
 }
+
 #mc_embed_signup .button {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100!important;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+#mc_embed_signup .email {
+	font-family:'Roboto', Helvetica, Arial, sans-serif!important;
+	font-weight: 100;
 }
 
 
