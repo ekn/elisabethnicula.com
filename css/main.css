@@ -156,6 +156,16 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+	margin: 1.5em 0 .5em 0;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.1em;
+    color: #606060;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 strong {
 	font-weight: 600;
 }
