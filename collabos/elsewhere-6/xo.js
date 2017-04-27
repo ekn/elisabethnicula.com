@@ -44,11 +44,11 @@ window.onload = function() { Physics(function( world ){
 var randomRect = function() {
     var rect;
     if (Math.random() > 0.5) {
-        rect = Physics.body('rectangle', randomize({ width: 50, height: 50 }));
+        rect = Physics.body('rectangle', randomize({ width: 20, height: 20 }));
         rect.view = new Image();
         rect.view.src = "x.png";
     } else {
-        rect = Physics.body('rectangle', randomize({ width: 50, height: 50 }));
+        rect = Physics.body('rectangle', randomize({ width: 20, height: 20 }));
         rect.view = new Image();
         rect.view.src = "o.png";
     }
