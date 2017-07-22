@@ -133,6 +133,14 @@ li.trip {
 	height: 100%;
 }
 
+/* INDEX BG IMAGE ------------------------------------------ */
+
+#bg-image {
+    background: #d35d5d;
+    background-image: url("../img/bg.gif");
+    background-size: cover;
+}
+
 /* ADDITIONAL TEXT STYLES ------------------------------------------ */
 
 p.copyright {
