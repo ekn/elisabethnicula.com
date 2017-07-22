@@ -364,8 +364,13 @@ p.date {
 	}
 	
 	nav {
-    font-size: 1.2em;
-    line-height: 1.3em;
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+    
+    .index ul {
+        margin: 0;
+        padding: 15px 5%;
 }
 	
 }
