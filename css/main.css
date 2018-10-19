@@ -306,6 +306,8 @@ font-size: .8em;
 	color: #fff;
 }
 
+.credit a {color: #fff;}
+
 nav .active {
 	color: #FFF!important;
 	border-bottom: none!important;
