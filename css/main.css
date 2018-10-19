@@ -264,6 +264,14 @@ li.three {
 
 body.full {background: url('../img/index-diorama.gif') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
+/* GRADIENT BG (FOR MANIFESTO) ------------------------------------------ */
+
+.manifesto {background: linear-gradient(105deg, rgba(118, 203, 218, 1), rgba(243, 133, 140, 1));}
+
+/* GRADIENT BG (FOR INDEX) ------------------------------------------ */
+
+.index-gradient {background: linear-gradient(45deg, rgba(255, 80, 102, 1), rgba(143, 140, 250, 1));}
+
 /* ALT NAV FOR INDEX ------------------------------------------ */
 
 .index ul {
@@ -295,7 +303,7 @@ font-size: .8em;
 
 .credit {
 	font-size: .8em;
-	color: #acacac;
+	color: #fff;
 }
 
 nav .active {
@@ -305,12 +313,17 @@ nav .active {
 	background-color: #2700ff; 
 }
 
-
 p.date {
 	margin: 3em 0 0 0;
 	font-weight: 700;
 	color: #ACACAC;
 }
+
+.no-underline {border-bottom: none;}
+
+.italic {font-style: italic;}
+
+.footnote {padding-top: 30px; font-size: .9em;}
 
 /* MAILCHIMP FORM ------------------------------------------ */
 
