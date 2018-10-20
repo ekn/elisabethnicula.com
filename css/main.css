@@ -119,13 +119,13 @@ nav {
 
 a:link {color:#2700ff; text-decoration: none;}     
 a:visited {color:#2700ff; text-decoration: none;} 
-a:hover {color:#2700ff; border-bottom: 10px solid #33eecc;}  
+a:hover {color:#2700ff; border-bottom: 10px solid #00dddd;}  
 a:active {color:#2700ff;text-decoration: none;}
 
-nav a:link {color:#33eecc; text-decoration: none;}     
-nav a:visited {color:#33eecc; text-decoration: none;} 
-nav a:hover {color:#33eecc; border-bottom: 10px solid #33eecc;}  
-nav a:active {color:#33eecc;text-decoration: none;}
+nav a:link {color:#00dddd; text-decoration: none;}     
+nav a:visited {color:#00dddd; text-decoration: none;} 
+nav a:hover {color:#00dddd; border-bottom: 10px solid #00dddd;}  
+nav a:active {color:#00dddd;text-decoration: none;}
 
 
 /** h1 {
@@ -316,7 +316,7 @@ nav .active {
 	color: #FFF!important;
 	border-bottom: none!important;
 	cursor: text;
-	background-color: #33eecc; 
+	background-color: #00dddd; 
 }
 
 p.date {
