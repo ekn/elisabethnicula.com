@@ -127,6 +127,8 @@ nav a:visited {color:#00dddd; text-decoration: none;}
 nav a:hover {color:#00dddd; border-bottom: 10px solid #00dddd;}  
 nav a:active {color:#00dddd;text-decoration: none;}
 
+.arhive a:hover {border-bottom: none;}
+
 
 /** h1 {
 	display: block;
@@ -330,6 +332,14 @@ p.date {
 .italic {font-style: italic;}
 
 .footnote {padding-top: 30px; font-size: .9em;}
+
+.arhive h3 {
+	padding-left: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-left: none;
+    text-transform: uppercase;
+}
 
 /* MAILCHIMP FORM ------------------------------------------ */
 
