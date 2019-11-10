@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-image">
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,7 +21,6 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {ma
 body {
   font: 400 16px/1.5 "IBM Plex Mono", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #fff;
-  background-color: #7f47ff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -63,7 +62,7 @@ img { max-width: 100%; vertical-align: middle; }
 
 .bg-image {background: url('images/bg-6.gif') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;} 
     @media screen and (max-width: 600px) {
-        .bg-image {background: url('images/bg-sm.gif') no-repeat center center fixed; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+        .bg-image {background: url('images/bg-sm.gif') repeat-y center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
             }  
             
 /* TEXT ------------------------------------------ */ 
@@ -77,7 +76,7 @@ img { max-width: 100%; vertical-align: middle; }
 </style></head>
 
 
-<body class="parent bg-image">
+<body class="parent">
         
     <main class="full-wrapper">
         <div class="container">
