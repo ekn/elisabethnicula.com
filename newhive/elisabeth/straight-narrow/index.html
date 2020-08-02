@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  
+      <link id='css_minimal' rel='stylesheet' type='text/css' href='/newhive/s.newhive.com/minimal.css.82a43d70.css'>
+    
+          <script src='/newhive/s.newhive.com/curl.js.1b2d308c.js'></script>
+        <script>
+curl({
+    // TODO: use S3 / CDN for extra newhive-specific bundles
+    //   with curl loading and versioning support
+    baseUrl: "//newhive.com/lib"
+    ,paths: {'media' : '/media.tnh.me/' }
+    ,pluginPath: 'curl/plugin'
+});
+    </script>
+          <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+          <title>STRAIGHT&amp;NARROW</title>
+            <script src='/newhive/s.newhive.com/expr.js.25cec46f.js'></script>
+        </head>
+<body class=' expr '
+  >   
+  <script>
+if(typeof window.scripts == 'undefined'){
+  window.scripts = []
+  var scripts = window.scripts
+  scripts.animate = function(){
+    var animate = false
+    scripts.map(function(s){
+      if(s.animate && s.animate.go){
+        s.animate()
+        animate = true
+      }
+    })
+    if(animate) window.requestAnimationFrame(scripts.animate)
+  }
+  scripts.start = function(){
+    scripts.map(function(s){
+      s.run()
+      if(s.animate) s.animate.go = true
+    })
+    window.requestAnimationFrame(scripts.animate)
+  }
+  scripts.stop = function(){
+    scripts.map(function(s){
+      s.stop()
+      if(s.animate) s.animate.go = false
+    })
+  }
+}
+  </script>
+      <div id='bg' class='happfill hive_html'
+  style='background-color : #FFFFFF'
+>
+      <iframe src="//elisabethnicula.com/collabos/sharpround/" width="100%" height="100%" class="content" style="opacity: 1;"></iframe>
+  </div>    
+  <script>curl(['ui/expression'], function(expression) {
+    expression.init({"apps": {}, "bg": {"dimensions": [300, 200.00000000000003], "css_state": {}, "color": "#FFFFFF", "css_class": "", "content": "\u003ciframe src=\"//elisabethnicula.com/collabos/sharpround/\" width=\"100%\" height=\"100%\" class=\"content\" style=\"opacity: 1;\"\u003e\u003c/iframe\u003e", "client_data": {}, "position": [350, 201.82926829268288], "z": 0, "type": "hive.html", "id": "abd648ac", "name": "html_2"}, "type": "expr", "path": "elisabeth/straight-narrow"}); });</script>
+<div id='dynamic_group'></div></body>
+</html>
