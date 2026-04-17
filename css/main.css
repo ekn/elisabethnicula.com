@@ -95,29 +95,29 @@ nav {
 a:link {color:#00bd5f; text-decoration: none; border-bottom: 1px solid #00bd5f;}     
 a:visited {color:#00bd5f; text-decoration: none; border-bottom: 1px solid #00bd5f;} 
 a:hover {color:#6666ff; text-decoration: none; border-bottom: 1px solid #6666ff;}  
-a:active {color:#e2ff00; text-decoration: none; border-bottom: 1px solid #e2ff00;}
+a:active {color:#ffff88; text-decoration: none; border-bottom: 1px solid #ffff88;}
 
-.index a:link {color:#ff6294; text-decoration: none; border-bottom: none;}     
-.index a:visited {color:#ff6294; text-decoration: none; border-bottom: none;} 
+.index a:link {color:#ff6272; text-decoration: none; border-bottom: none;}     
+.index a:visited {color:#ff6272; text-decoration: none; border-bottom: none;} 
 .index a:hover {color:#6666ff; text-decoration: none; border-bottom: 1px solid #6666ff;}  
-.index a:active {color:#e2ff00; text-decoration: none; border-bottom: none;}
+.index a:active {color:#ffff88; text-decoration: none; border-bottom: none;}
 
 nav a:link, nav a:visited {color:#6666ff; text-decoration: none; border-bottom: none;}
 nav a:hover {border-bottom: 1px solid #6666ff;}
-nav a:active {color:#e2ff00; text-decoration: none; border-bottom: none;}
+nav a:active {color:#ffff88; text-decoration: none; border-bottom: none;}
 
 .index .active {
-	color: #e2ff00!important;
+	color: #6666ff!important;
 	border-bottom: none!important;
 	cursor: text;
     background-color: rgb(226,255,0,0)!important;
 }
 
 nav .active {
-	color: #ff14f6!important;
+	color: #ff6272!important;
 	border-bottom: none!important;
 	cursor: text;
-	background-color: #e2ff00!important;
+	background-color: #ffff88!important;
 }
 
 
