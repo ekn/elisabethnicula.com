@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% if page.hidetitle %}
+	<h2 class="hidden">{{ page.title }}, {{ page.date }}</h2>
+{% else %}
+	<h2>{{ page.title }}, {{ page.date }}</h2>
+{% endif %}
+
+{% if page.nodescription %}
+{% else %}
+	<p class="text">
+    {{ page.description }}
+	</p>
+{% endif %}
+
+<div class="gallery-container">
+	{{ content }}
+</div>

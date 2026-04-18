@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include meta.html %}
+        <title>{{ site.title }} / {{ site.description }}</title>
+    </head>
+    <body>
+        <main class="container clearfix">
+            <nav class="index">
+            {{ content }}
+            </nav>
+        </main>
+        {% include scripts.html %}    
+    </body>
+</html>
