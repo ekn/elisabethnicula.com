@@ -9,29 +9,6 @@ html {
     font-size: 16px;
 }
 
-/* Remove text-shadow in selection highlight. These selection rule sets have to be separate. Customize the background color to match your design. */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/* A better looking default horizontal rule */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 /* Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers: https://github.com/h5bp/html5-boilerplate/issues/440 */
 
 audio, canvas, iframe, img, svg, video {vertical-align: middle;}
@@ -92,19 +69,26 @@ nav {
     
 /* LINKS ------------------------------------------ */
 
+/* body */
+
 a:link {color:#00bd5f; text-decoration: none; border-bottom: 1px solid #00bd5f;}     
 a:visited {color:#00bd5f; text-decoration: none; border-bottom: 1px solid #00bd5f;} 
 a:hover {color:#6666ff; text-decoration: none; border-bottom: 1px solid #6666ff;}  
 a:active {color:#b5ffda; text-decoration: none; border-bottom: 1px solid #ffff88;}
 
+/* remove underline on linked images */
+
+.gallery-image a:link {border-bottom: none;} 
+.gallery-image a:visited {border-bottom: none;}
+.gallery-image a:hover {border-bottom: none;}      
+.gallery-image a:active {border-bottom: none;}
+
+/* homepage */
+
 .index a:link {color:#ff6272; text-decoration: none; border-bottom: none;}     
 .index a:visited {color:#ff6272; text-decoration: none; border-bottom: none;} 
 .index a:hover {color:#6666ff; text-decoration: none; border-bottom: 1px solid #6666ff;}  
 .index a:active {color:#b5ffda; text-decoration: none; border-bottom: none;}
-
-nav a:link, nav a:visited {color:#6666ff; text-decoration: none; border-bottom: none;}
-nav a:hover {border-bottom: 1px solid #6666ff;}
-nav a:active {color:#b5ffda; text-decoration: none; border-bottom: none;}
 
 .index .active {
 	color: #6666ff!important;
@@ -112,6 +96,12 @@ nav a:active {color:#b5ffda; text-decoration: none; border-bottom: none;}
 	cursor: text;
     background-color: rgb(226,255,0,0)!important;
 }
+
+/* upper nav */
+
+nav a:link, nav a:visited {color:#6666ff; text-decoration: none; border-bottom: none;}
+nav a:hover {border-bottom: 1px solid #6666ff;}
+nav a:active {color:#b5ffda; text-decoration: none; border-bottom: none;}
 
 nav .active {
 	color: #ff6272!important;
@@ -257,8 +247,15 @@ header, footer {
 
 /* images */
 
-.gallery-image {margin-bottom: 2em;}
+.gallery-image {margin: 1em 0;}
 .gallery-image img {width: 100%; height: auto;}
+.screenshot {margin-left: -2em; margin-bottom: -2em;} /* fix for screenshots with transparent backgrounds so they line up okay */
+    @media screen and (max-width: 800px) {
+        {margin-left: -1em; margin-bottom: -1em;}
+    }
+    @media screen and (max-width: 500px) {
+        {margin-left: -.2em; margin-bottom: -.2em;}
+    }
 
 
 /* TEXT PAGE LAYOUT ------------------------------------- */
@@ -294,13 +291,13 @@ header, footer {
 }
 
 
-/* FULL BG IMAGE OR COLOR (Former index, not in use) ------------------------------------------ */
+/* BACKGROUNDS ------------------------------------------ */
 
 body.full {background: url('../img/28.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 body.full-color {background: #5831b3;}
+.white {background: #fff;}
 
-
-/* GRADIENT BG (FOR NATUREGIFMANIFESTO) ------------------------------------------ */
+/* gradient for naturegifmanifesto */
 
 .manifesto {background: linear-gradient(105deg, rgba(118, 203, 218, 1), rgba(243, 133, 140, 1));}
 

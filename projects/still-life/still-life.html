@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i" rel="stylesheet">
+    
+<style>
+
+/* Reset some basic elements */
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {margin: 0; padding: 0; }
+
+/* Basic styling */
+
+body {
+  font: 400 16px/1.5 "IBM Plex Mono", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #000;
+  background-color: #eecfcf;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
+
+/* `main` element */
+
+main {
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
+
+/* Images */
+
+img { max-width: 100%; vertical-align: middle; }
+
+
+/* CONTENT & IMAGE POSITIONING -------------------- */
+
+.full-wrapper {
+    display: block;
+    margin: 0 auto;
+    }
+
+.container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    }
+
+.section {
+    display: block;
+    position: relative;
+    margin: 0 auto 10vh auto;
+}
+
+.center-overlap {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+}
+
+.overlap {
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    vertical-align: middle;
+}
+
+/* TEXT ------------------------------------------ */ 
+
+.statement {font-family: 'Times New Roman'; font-weight: 400; font-size: 2em; line-height: 1em; text-align: center; text-transform: uppercase; margin: 0 auto; padding: 0 auto;}
+      
+</style></head>
+
+
+<body class="parent bg-image">
+        
+    <main class="full-wrapper">
+        <div class="container">
+            <div class="section">
+                <div class="center-overlap" style="width: 1200px; height: 800px;">
+                    <img class="overlap" src="images/1.gif"style="z-index: 0; opacity: .8;">
+                    <img class="overlap" src="images/2.gif" style="z-index: 10; opacity: .9;">
+                    <img class="overlap" src="images/3.gif" style="z-index: 20; opacity: 1;">
+                    <img class="overlap" src="images/4.gif" style="z-index: 30; opacity: 1;">
+                    <img class="overlap" src="images/5.gif" style="z-index: 40; opacity: 1;">
+                    <img class="overlap" src="images/6.gif" style="z-index: 50; opacity: 1;">
+                </div>                
+            </div>
+        </div>
+    </main>
+
+</body>    
+</html>
