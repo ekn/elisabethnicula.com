@@ -50,7 +50,7 @@ body {
     font-weight: 400;
     line-height: 1.5em;
 }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
 	    body {
             font-size: 1.2em;
             line-height: 1.3em;
@@ -62,7 +62,7 @@ nav {
 	margin: 0;
 	padding: 0;
 }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
 	    nav {}
     }
     
@@ -175,7 +175,7 @@ li {
 	margin: 0 auto;
     max-width: 60em;      /* 960px/16px = 60em */
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
 		.container {
 		    width: 90%;
             margin: 0 5%;
@@ -185,7 +185,7 @@ li {
 header, footer {
 	padding: 20px 0;
 }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
 		header, footer {
             padding: 10px 0;
         }
@@ -207,7 +207,7 @@ header, footer {
     display: flex;
     flex-direction: column;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
     .onecolumn-container {
     } 
 }
@@ -219,7 +219,7 @@ header, footer {
     flex-direction: row;
     column-gap: 2%;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
     .twocolumn-container {
     flex-direction: column;
     } 
@@ -235,7 +235,7 @@ header, footer {
     flex-direction: row;
     column-gap: 2%;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
     .threecolumn-container {
         flex-direction: column;
     } 
@@ -250,12 +250,12 @@ header, footer {
 .gallery-image {margin: 1em 0;}
 .gallery-image img {width: 100%; height: auto;}
 .screenshot {margin-left: -2em; margin-bottom: -2em;} /* fix for screenshots with transparent backgrounds so they line up okay */
-    @media screen and (max-width: 800px) {
-        {margin-left: -1em; margin-bottom: -1em;}
-    }
+    @media screen and (max-width: 850px) {
+        .screenshot {margin-left: -1em; margin-bottom: -1em;}
+        }
     @media screen and (max-width: 500px) {
-        {margin-left: -.2em; margin-bottom: -.2em;}
-    }
+        .screenshot {margin-left: -.5em; margin-bottom: -.5em;}
+        }
 
 
 /* TEXT PAGE LAYOUT ------------------------------------- */
@@ -265,7 +265,7 @@ header, footer {
 	float: left;
 	width: 70%;      /* 620px/960px = .64583333 */
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
 	    .text {
 		    float: none;
             width: 100%;
@@ -279,7 +279,7 @@ header, footer {
     margin: 0;
 	padding: 20px 0;
 }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         .index ul {
             padding: 15px;
         }
