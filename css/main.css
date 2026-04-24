@@ -215,15 +215,17 @@ ul.gallery-full {
 
 /* TEXT PAGE LAYOUT ------------------------------------- */
 
-.text {
+.text-container {
 	display: block;
 	float: left;
 	width: 70%;      /* 620px/960px = .64583333 */
+    padding-bottom: 40px;
     }
     @media screen and (max-width: 850px) {
-	    .text {
+	    .text-container {
 		    float: none;
             width: 100%;
+            padding-bottom: 20px;
         }
     }
 
@@ -246,7 +248,7 @@ ul.gallery-full {
 
 /* ADDITIONAL TEXT STYLES ------------------------------------------ */
 
-.text p {margin: 10px 0;}
+.text-container p {margin: 10px 0;}
 
 .gallery-caption {margin-top: 5px;}
 
