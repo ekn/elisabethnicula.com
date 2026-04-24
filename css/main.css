@@ -1,33 +1,5 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/* ==========================================================================
-   Base styles
-   ========================================================================== */
-
-html {
-    color: #fff;
-    font-size: 16px;
-}
-
-/* Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers: https://github.com/h5bp/html5-boilerplate/issues/440 */
-
-audio, canvas, iframe, img, svg, video {vertical-align: middle;}
-
-/* Remove default fieldset styles. */
-
-fieldset {border: 0; margin: 0; padding: 0;}
-
-/* Allow only vertical resizing of textareas. */
-
-textarea {resize: vertical;}
-
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0;}
-
+---
+---
 
 /* COLOR NOTE ------------------------------------------
 
@@ -39,16 +11,19 @@ textarea {resize: vertical;}
 
 */
 
+/* RESET ------------------------------------------ */
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; 
+}
 
 /* GENERAL ------------------------------------------ */
 
 body {
+    font: 400 16px/1.5 "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	background: #eeedff;
 	color: #00bd5f;
-	font-family:'Arial', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5em;
 }
     @media screen and (max-width: 850px) {
 	    body {
@@ -61,11 +36,7 @@ nav {
 	display: block;
 	margin: 0;
 	padding: 0;
-}
-    @media screen and (max-width: 850px) {
-	    nav {}
-    }
-    
+}   
     
 /* LINKS ------------------------------------------ */
 
@@ -76,14 +47,7 @@ a:visited {color:#00bd5f; text-decoration: none; border-bottom: 1px solid #00bd5
 a:hover {color:#6666ff; text-decoration: none; border-bottom: 1px solid #6666ff;}  
 a:active {color:#b5ffda; text-decoration: none; border-bottom: 1px solid #ffff88;}
 
-/* remove underline on linked images */
-
-.gallery-image a:link {border-bottom: none;} 
-.gallery-image a:visited {border-bottom: none;}
-.gallery-image a:hover {border-bottom: none;}      
-.gallery-image a:active {border-bottom: none;}
-
-/* homepage */
+/* homepage nav */
 
 .index a:link {color:#ff6272; text-decoration: none; border-bottom: none;}     
 .index a:visited {color:#ff6272; text-decoration: none; border-bottom: none;} 
@@ -97,7 +61,7 @@ a:active {color:#b5ffda; text-decoration: none; border-bottom: 1px solid #ffff88
     background-color: rgb(226,255,0,0)!important;
 }
 
-/* upper nav */
+/* main nav */
 
 nav a:link, nav a:visited {color:#6666ff; text-decoration: none; border-bottom: none;}
 nav a:hover {border-bottom: 1px solid #6666ff;}
@@ -110,6 +74,12 @@ nav .active {
 	background-color: #b5ffda!important;
 }
 
+/* removes underline on linked images */
+
+.gallery-image a:link {border-bottom: none;} 
+.gallery-image a:visited {border-bottom: none;}
+.gallery-image a:hover {border-bottom: none;}      
+.gallery-image a:active {border-bottom: none;}
 
 /* MAIN TEXT STYLES ------------------------------------------ */
 
@@ -131,7 +101,7 @@ h2 {
 	padding: 0;
 	font-size: 1.5em;
     font-weight: 500;
-    line-height:1.5em;
+    line-height: 1.5em;
 }
 
 h3 {
@@ -167,7 +137,6 @@ li {
 	float: left;
 }
 
-
 /* BASIC POSITIONING ------------------------------------------ */
 
 .container {
@@ -191,15 +160,64 @@ header, footer {
         }
     }
 
-/* COLUMN LAYOUTS ------------------------------------- */
+/* GALLERY LAYOUTS ------------------------------------- */
 
 .gallery-container {
     display: block;
     float: left;
     width: 100%;
     padding: 2em 0;
-
 }
+
+ul.gallery {
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+}
+
+ul.gallery-full {
+    display: grid;
+	grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+}
+
+.gallery li, .gallery-full li {
+	display: block;
+}
+
+.gallery a, .gallery-full a {
+	text-decoration: none;
+	border-bottom: none;
+	}
+	
+.gallery img, .gallery-full img {
+    width: 100%;
+    height: auto;
+    object-position: left top;
+    object-fit: contain;
+	}
+
+/* Gallery Center used for Naturegifmanifesto only */
+
+ul.gallery-center {
+    display: grid;
+	grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+}
+
+.gallery-center img {
+    width: 100%;
+    height: auto;
+    object-position: center!important;
+    object-fit: contain;
+	}
+
 
 /* one-column layout */
 
@@ -257,7 +275,6 @@ header, footer {
         .screenshot {margin-left: -.5em; margin-bottom: -.5em;}
         }
 
-
 /* TEXT PAGE LAYOUT ------------------------------------- */
 
 .text {
@@ -272,8 +289,7 @@ header, footer {
         }
     }
 
-
-/* INDEX PAGE ------------------------------------------------------ */
+/* HOMEPAGE LAYOUT ------------------------------------------------------ */
 
 .index ul {
     margin: 0;
@@ -290,36 +306,13 @@ header, footer {
 	padding-bottom: 10px;
 }
 
-
-/* BACKGROUNDS ------------------------------------------ */
-
-body.full {background: url('../img/28.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-body.full-color {background: #5831b3;}
-.white {background: #fff;}
-
-/* gradient for naturegifmanifesto */
-
-.manifesto {background: linear-gradient(105deg, rgba(118, 203, 218, 1), rgba(243, 133, 140, 1));}
-
-
 /* ADDITIONAL TEXT STYLES ------------------------------------------ */
-
-p.copyright {
-color: #999;
-font-size: .8em;
-}
-
-.slide-caption {margin-top: 5px;}
 
 .text p {margin: 10px 0;}
 
-.credit {font-size: .8em;}
+.gallery-caption {margin-top: 5px;}
 
-p.date {
-	margin: 3em 0 0 0;
-	font-weight: 700;
-	color: #ACACAC;
-}
+.credit {font-size: .8em;}
 
 h3.ital {
     font-weight: 500;
@@ -327,25 +320,10 @@ h3.ital {
 }
 
 .no-underline {border-bottom: none;}
-
 .strong {font-weight: 400;}
-
 .italic {font-style: italic;}
-
 .big {font-size: 2em;}
-
 .footnote {padding-top: 30px; font-size: .9em;}
-
-/* newhive header */
-
-.gallery-container h3 {
-    margin: .5em 0 1em 0;
-	padding-left: 0;
-	text-align: left;
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.1em;
-}
 
 /* Manifesto text and paragraph */
 
@@ -356,6 +334,16 @@ h3.ital {
 .manifesto-container p {
     margin-bottom: 1em;
 }
+
+/* BACKGROUNDS ------------------------------------------ */
+
+body.full {background: url('../img/28.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+body.full-color {background: #5831b3;}
+.white {background: #fff;}
+
+/* gradient for naturegifmanifesto */
+
+.manifesto {background: linear-gradient(105deg, rgba(118, 203, 218, 1), rgba(243, 133, 140, 1));}
 
 /* MAILCHIMP FORM ------------------------------------------ */
 
@@ -377,45 +365,12 @@ h3.ital {
 	font-weight: 300;
 }
 
+/* HELPER CLASSES ------------------------------------------ */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/* Hide visually and from screen readers */
 
-/*
- * Hide visually and from screen readers:
- */
+.hidden {display: none !important;}
 
-.hidden {
-    display: none !important;
-}
+/* Hide visually and from screen readers, but maintain layout */
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
+.invisible {visibility: hidden;}
