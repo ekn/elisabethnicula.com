@@ -201,68 +201,6 @@ ul.gallery-full {
     object-fit: contain;
 	}
 
-/* Gallery Center used for Naturegifmanifesto only */
-
-ul.gallery-center {
-    display: grid;
-	grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-gap: 25px;
-    margin-bottom: 25px;
-}
-
-.gallery-center img {
-    width: 100%;
-    height: auto;
-    object-position: center!important;
-    object-fit: contain;
-	}
-
-
-/* one-column layout */
-
-.onecolumn-container {
-    display: flex;
-    flex-direction: column;
-    }
-    @media screen and (max-width: 850px) {
-    .onecolumn-container {
-    } 
-}
-
-/* two column flex layout */
-
-.twocolumn-container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2%;
-    }
-    @media screen and (max-width: 850px) {
-    .twocolumn-container {
-    flex-direction: column;
-    } 
-}
-
-.two-1 {order: 1; flex-basis: 49%;}
-.two-2 {order: 2; flex-basis: 49%;}
-
-/* three column flex layout */
-
-.threecolumn-container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2%;
-    }
-    @media screen and (max-width: 850px) {
-    .threecolumn-container {
-        flex-direction: column;
-    } 
-}
-
-.three-1 {order: 1; flex-basis: 32%;}
-.three-2 {order: 2; flex-basis: 32%;}
-.three-3 {order: 3; flex-basis: 32%;}
-
 /* images */
 
 .gallery-image {margin: 1em 0;}
@@ -325,24 +263,15 @@ h3.ital {
 .big {font-size: 2em;}
 .footnote {padding-top: 30px; font-size: .9em;}
 
-/* Manifesto text and paragraph */
-
-.manifesto-container {
-    margin: 0 6em;
-}
-
-.manifesto-container p {
-    margin-bottom: 1em;
-}
-
 /* BACKGROUNDS ------------------------------------------ */
+
+/* background for photographed artworks with white backgrounds */
+.white {background: #fff;}
+
+/* other backgrounds not currently in use */
 
 body.full {background: url('../img/28.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 body.full-color {background: #5831b3;}
-.white {background: #fff;}
-
-/* gradient for naturegifmanifesto */
-
 .manifesto {background: linear-gradient(105deg, rgba(118, 203, 218, 1), rgba(243, 133, 140, 1));}
 
 /* MAILCHIMP FORM ------------------------------------------ */
