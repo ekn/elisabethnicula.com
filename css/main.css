@@ -35,8 +35,13 @@ body {
 nav {
 	display: block;
 	margin: 0;
-	padding: 0;
-}   
+	padding: 20px 0 0;
+}
+     @media screen and (max-width: 850px) {
+        nav {
+            padding: 15px 0 0;
+        }
+    }
     
 /* LINKS ------------------------------------------ */
 
@@ -83,17 +88,8 @@ nav .active {
 
 /* MAIN TEXT STYLES ------------------------------------------ */
 
-/** h1 {
-	display: block;
-	margin: 0;
-	padding: 0;
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #ACACAC;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-} **/
+h1 {
+}
 
 h2 {
 	display: block;
@@ -156,7 +152,7 @@ header, footer {
 }
     @media screen and (max-width: 850px) {
 		header, footer {
-            padding: 10px 0;
+            padding: 15px 0;
         }
     }
 
@@ -201,18 +197,6 @@ ul.gallery-full {
     object-fit: contain;
 	}
 
-/* images */
-
-.gallery-image {margin: 1em 0;}
-.gallery-image img {width: 100%; height: auto;}
-.screenshot {margin-left: -2em; margin-bottom: -2em;} /* fix for screenshots with transparent backgrounds so they line up okay */
-    @media screen and (max-width: 850px) {
-        .screenshot {margin-left: -1em; margin-bottom: -1em;}
-        }
-    @media screen and (max-width: 500px) {
-        .screenshot {margin-left: -.5em; margin-bottom: -.5em;}
-        }
-
 /* TEXT PAGE LAYOUT ------------------------------------- */
 
 .text-container {
@@ -229,7 +213,7 @@ ul.gallery-full {
         }
     }
 
-/* HOMEPAGE LAYOUT ------------------------------------------------------ */
+/* HOMEPAGE LAYOUT ------------------------------------------------ */
 
 .index ul {
     margin: 0;
@@ -237,7 +221,7 @@ ul.gallery-full {
 }
     @media screen and (max-width: 850px) {
         .index ul {
-            padding: 15px;
+            padding: 15px 0;
         }
     }
 
@@ -259,11 +243,13 @@ h3.ital {
     font-style: italic;
 }
 
+/* INLINE TYPE TEXT STYLES ------------------------------------------ */
+
 .no-underline {border-bottom: none;}
 .strong {font-weight: 400;}
-.italic {font-style: italic;}
+.italic {font-style: italic;} /* often or always forget and use em */
 .big {font-size: 2em;}
-.footnote {padding-top: 30px; font-size: .9em;}
+.callout-color {color: #ff6272;}
 
 /* BACKGROUNDS ------------------------------------------ */
 
