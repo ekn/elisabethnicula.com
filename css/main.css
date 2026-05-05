@@ -165,7 +165,7 @@ header, footer {
     padding: 2em 0;
 }
 
-ul.gallery {
+ul.gallery-2 {        /* two columns */
     display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: auto;
@@ -173,7 +173,7 @@ ul.gallery {
     margin-bottom: 25px;
 }
 
-ul.gallery-full {
+ul.gallery-1 {       /* one column */
     display: grid;
 	grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -181,16 +181,24 @@ ul.gallery-full {
     margin-bottom: 25px;
 }
 
-.gallery li, .gallery-full li {
+ul.gallery-3 {        /* three columns */
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+}
+
+.gallery-2 li, .gallery-1 li, .gallery-3 li {
 	display: block;
 }
 
-.gallery a, .gallery-full a {
+.gallery-2 a, .gallery-1 a, .gallery-3 a {
 	text-decoration: none;
 	border-bottom: none;
 	}
 	
-.gallery img, .gallery-full img {
+.gallery-2 img, .gallery-1 img, .gallery-3 img {
     width: 100%;
     height: auto;
     object-position: left top;
